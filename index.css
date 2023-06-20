@@ -49,7 +49,7 @@ main {
     .item_title {
       height: 70px; } }
   .item_title span {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
@@ -73,7 +73,7 @@ main {
     .item_info .item_info_advantages .mb {
       margin-bottom: 10px; }
     .item_info .item_info_advantages p {
-      font-family: Arial;
+      font-family: Arial, sans-serif;
       font-size: 15px;
       line-height: 21px;
       color: #000000;
@@ -105,7 +105,7 @@ main {
     .item_info .item_info_price p {
       text-align: center;
       font-weight: 700;
-      font-family: Arial;
+      font-family: Arial, sans-serif;
       font-size: 15px;
       line-height: 21px;
       color: #000000; }
@@ -124,7 +124,7 @@ main {
         color: #0E9A0B;
         font-weight: 900;
         font-size: 20px;
-        font-family: Arial; }
+        font-family: Arial, sans-serif; }
         @media (min-width: 768px) and (max-width: 1023px) {
           .item_info .item_info_price .price .number {
             font-size: 25px; } }
@@ -132,7 +132,7 @@ main {
         font-size: 14px;
         color: #282828;
         font-weight: 400;
-        font-family: Arial; }
+        font-family: Arial, sans-serif; }
         @media (min-width: 768px) and (max-width: 1023px) {
           .item_info .item_info_price .price .price_units {
             font-size: 20px; } }
@@ -178,7 +178,7 @@ main {
     border: none;
     cursor: pointer;
     display: block;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 21px;
@@ -199,6 +199,9 @@ main {
     @media (min-width: 768px) and (max-width: 1023px) {
       .item_info .cursor_up {
         left: 500px; } }
+    @media (max-width: 767px) {
+      .item_info .cursor_up {
+        left: 260px; } }
   .item_info .metrics {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -216,7 +219,7 @@ main {
         width: 20px;
         height: 20px; } }
     .item_info .metrics_item .metrics_item_value {
-      font-family: "Arial", sans-serif;
+      font-family: Arial, sans-serif;
       position: relative;
       font-weight: 400;
       font-size: 16px;
@@ -238,7 +241,7 @@ main {
       height: 0.5px;
       background-color: black; }
     .item_info .metrics_item .metrics_item_special {
-      font-family: "Arial", sans-serif;
+      font-family: Arial, sans-serif;
       color: #00BBEA; }
       @media (min-width: 768px) and (max-width: 1023px) {
         .item_info .metrics_item .metrics_item_special {

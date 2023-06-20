@@ -1,21 +1,21 @@
 @mixin title-text
   font:
-    family: Montserrat
+    family: Montserrat, sans-serif
     size: 16px
     weight: 700
   line-height: 22px
   color: #FFFFFF
 
-@mixin advantages-text
+@mixin default-text
   font:
-    family: Arial
+    family: Arial, sans-serif
     size: 15px
   line-height: 21px
   color: #000000
 
 @mixin button
   font:
-    family: Arial
+    family: Arial, sans-serif
     size: 18px
     weight: 700
   line-height: 21px
@@ -43,7 +43,6 @@ main
     margin-top: 0
   @media (min-width: 768px) and (max-width: 1023px)
     width: 100%
-    //padding: 0 20px
     flex-direction: column
     border: none
     box-shadow: none
@@ -87,19 +86,17 @@ main
     @media (min-width: 768px) and (max-width: 1023px)
       align-items: flex-end
 
-
     .mb
       margin-bottom: 10px
 
     p
-      @include advantages-text
+      @include default-text
       word-break: break-word
       font-weight: 400
       @media (max-width: 767px)
         font-size: 17px
       @media (min-width: 768px) and (max-width: 1023px)
         font-size: 22px
-    //margin-top: 10px
 
     svg
       margin-right: 12px
@@ -110,7 +107,6 @@ main
       @media (min-width: 768px) and (max-width: 1023px)
         width: 30px
         height: 30px
-
 
   .mb
     margin-bottom: 10px
@@ -123,13 +119,12 @@ main
     p
       text-align: center
       font-weight: 700
-      @include advantages-text
+      @include default-text
       @media (max-width: 767px)
         font-size: 17px
       @media (min-width: 768px) and (max-width: 1023px)
         font-size: 22px
         margin-bottom: 20px
-
 
     span
       font-weight: normal
@@ -141,7 +136,7 @@ main
         color: #0E9A0B
         font-weight: 900
         font-size: 20px
-        font-family: Arial
+        font-family: Arial, sans-serif
         @media (min-width: 768px) and (max-width: 1023px)
           font-size: 25px
 
@@ -149,7 +144,7 @@ main
         font-size: 14px
         color: #282828
         font-weight: 400
-        font-family: Arial
+        font-family: Arial, sans-serif
         @media (min-width: 768px) and (max-width: 1023px)
           font-size: 20px
 
@@ -215,7 +210,8 @@ main
     left: 225px
     @media (min-width: 768px) and (max-width: 1023px)
       left: 500px
-
+    @media (max-width: 767px)
+      left: 260px
 
   .metrics
     display: grid
@@ -237,7 +233,7 @@ main
         height: 20px
 
     .metrics_item_value
-      font-family: "Arial", sans-serif
+      font-family: Arial, sans-serif
       position: relative
       font-weight: 400
       font-size: 16px
@@ -261,7 +257,7 @@ main
       background-color: black
 
     .metrics_item_special
-      font-family: "Arial", sans-serif
+      font-family: Arial, sans-serif
       color: #00BBEA
       @media (min-width: 768px) and (max-width: 1023px)
         font-size: 20px
